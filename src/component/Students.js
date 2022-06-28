@@ -7,7 +7,7 @@ function Students(props) {
     const cardInfo = [
         {
             image:
-                "s1.png",
+                "s1",
             name: "Mike",
             gpa: 3.8
         },
