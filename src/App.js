@@ -1,19 +1,16 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+import Home from './component/home';
+import About from './component/about';
+import Contact from './component/contact';
 import './App.css';
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-} from 'react-router-dom';
 
-
-function App() {
-    return (
-        <div>
+class App extends Component {
+    render() {
+        return (
             <Router>
                 <div className="App">
-                    <ul>
+                    <ul className="App-header">
                         <li>
                             <Link to="/">Home</Link>
                         </li>
@@ -24,17 +21,16 @@ function App() {
                             <Link to="/contact">Contact Us</Link>
                         </li>
                     </ul>
+                    <Routes>
+                        <Route exact path='/' element={< Home />}></Route>
+                        <Route exact path='/about' element={< About />}></Route>
+                        <Route exact path='/contact' element={< Contact />}></Route>
+                    </Routes>
                 </div>
-                <Route exact path='/' element={< Home />}></Route>
-                <Route exact path='/about' element={< About />}></Route>
-                <Route exact path='/contact' element={< Contact />}></Route>
-
-
-
             </Router>
-        </div>
-
-    );
+        );
+    }
 }
 
 export default App;
+
