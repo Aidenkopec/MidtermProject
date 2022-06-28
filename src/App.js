@@ -25,6 +25,11 @@ function App() {
                         </li>
                     </ul>
                 </div>
+                <Route exact path='/' element={< Home />}></Route>
+                <Route exact path='/about' element={< About />}></Route>
+                <Route exact path='/contact' element={< Contact />}></Route>
+
+
 
             </Router>
         </div>
