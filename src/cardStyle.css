@@ -1,0 +1,29 @@
+body {
+    /*margin: 0;*/
+    font-family: "Times New Roman"
+
+}
+
+
+
+.card-container
+{
+    text-align: center;
+    margin: 5%;
+    margin-top: 12%;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.top
+{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.card-body
+{
+    background-color: rgb(253, 243, 230);
+}
