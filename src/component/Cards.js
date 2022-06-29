@@ -14,7 +14,7 @@ function Cards({student}) {
                     <Card.Text>
                         GPA: {student.gpa}
                     </Card.Text>
-                    <Button variant="primary">Grade</Button>
+                    <Button className='Button' variant="primary">Grade</Button>
                 </Card.Body>
             </Card>
         </div>

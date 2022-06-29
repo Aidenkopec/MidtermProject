@@ -5,8 +5,6 @@ import About from './component/about';
 import Contact from './component/contact';
 import './App.css';
 import Students from "./component/Students";
-import Card from "./component/Cards";
-import Cards from "./component/Cards";
 
 
 class App extends Component {
@@ -32,9 +30,9 @@ class App extends Component {
             //         </Routes>
             //     </div>
             // </Router>
+
             <div>
                 <Students/>
-              {/*<Cards/>*/}x
             </div>
         );
     }

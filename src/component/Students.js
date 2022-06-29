@@ -1,5 +1,4 @@
 import React from 'react';
-// import Card from 'react-bootstrap/Card';
 import Cards from "./Cards";
 
 
@@ -12,20 +11,17 @@ function Students(props) {
             gpa: 3.8
         },
         {
-            image:
-                "s2.png",
+            image: "s2.png",
             name: "Manal",
             gpa: 3.6
         },
         {
-            image:
-                "s3.png",
+            image: "s3.png",
             name: "Moe",
             gpa: 3.2
         },
         {
-            image:
-                "s4.png",
+            image: "s4.png",
             name: "Mary",
             gpa: 2.6
         }
@@ -34,13 +30,6 @@ function Students(props) {
     const studentValues = cardInfo.map(student => <Cards key={student.name} student={student}/>)
     return <div>{studentValues}</div>
 
-
-    // const studentValues = cardInfo.map(student => <Card key={student.name} student={student}>)
-    //
-    //     return
-    //     <div>
-    //     {studentValues}
-    // < /div>
 }
 
 export default Students
