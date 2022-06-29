@@ -34,7 +34,7 @@ class App extends Component {
             // </Router>
             <div>
                 <Students/>
-              {/*<Cards/>*/}
+              {/*<Cards/>*/}x
             </div>
         );
     }

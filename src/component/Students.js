@@ -7,13 +7,13 @@ function Students(props) {
 
     const cardInfo = [
         {
-            image: "https://mdbootstrap.com/img/new/standard/nature/184.webp",
+            image: "s1.png",
             name: "Mike",
             gpa: 3.8
         },
         {
             image:
-                "https://github.com/Aidenkopec/MidtermProject/blob/0f5f62683984701dc72e59c5878611e2fbbab4b9/src/studentImages/s1.png",
+                "s2.png",
             name: "Manal",
             gpa: 3.6
         },
