@@ -1,29 +1,23 @@
 body {
-    /*margin: 0;*/
+    background-color: #ABDCFF;
     font-family: "Times New Roman"
 
 }
 
 
-
-.card-container
-{
+.card-container {
     text-align: center;
-    margin: 5%;
-    margin-top: 12%;
+    margin: 12% 5.8% 5.8%;
     display: inline-block;
     width: auto;
     height: auto;
 }
 
-.top
-{
+.top {
     width: 100%;
     text-align: center;
-    margin: auto;
 }
 
-.card-body
-{
-    background-color: rgb(253, 243, 230);
+.card-body {
+    background-color: #49C628;
 }
