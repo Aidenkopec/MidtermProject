@@ -1,19 +1,19 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
+// import Card from 'react-bootstrap/Card';
+import Cards from "./Cards";
 
 
 function Students(props) {
 
     const cardInfo = [
         {
-            image:
-                "s1",
+            image: "https://mdbootstrap.com/img/new/standard/nature/184.webp",
             name: "Mike",
             gpa: 3.8
         },
         {
             image:
-                "s2.png",
+                "https://github.com/Aidenkopec/MidtermProject/blob/0f5f62683984701dc72e59c5878611e2fbbab4b9/src/studentImages/s1.png",
             name: "Manal",
             gpa: 3.6
         },
@@ -29,36 +29,18 @@ function Students(props) {
             name: "Mary",
             gpa: 2.6
         }
-    ];
+    ]
+
+    const studentValues = cardInfo.map(student => <Cards key={student.name} student={student}/>)
+    return <div>{studentValues}</div>
 
 
-    return (
-        <div>
-            <>
-                <Card>
-                    <Card.Img variant="top" src="s1.png" />
-                    <Card.Body>
-                        <Card.Text>
-                            {cardInfo[0].image}
-                            {cardInfo[0].name}
-                            {cardInfo[0].gpa}
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-                <br />
-                <Card>
-                    <Card.Body>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk
-                            of the card's content.
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Img variant="bottom" src="holder.js/100px180" />
-                </Card>
-            </>
-        </div>
-    );
-
+    // const studentValues = cardInfo.map(student => <Card key={student.name} student={student}>)
+    //
+    //     return
+    //     <div>
+    //     {studentValues}
+    // < /div>
 }
 
-export default Students;
+export default Students
